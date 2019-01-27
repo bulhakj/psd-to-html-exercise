@@ -159,8 +159,8 @@ img {
 
 .story-wrapper {
     margin: 70px auto 120px auto;
-    height: 250px;
-    display:flex;
+    height: 260px;
+    display: flex;
     max-width: 960px;
     width: 100%;
     justify-content: center;
@@ -176,11 +176,11 @@ img {
 }
 
 .story-content {
-    margin-top: 0;
     height: 250px;
 }
 
 .story-content h2 {
+    margin-top: 0;
     text-align: left;
     font-size: 22px;
     letter-spacing: 1px;
@@ -211,7 +211,7 @@ img {
 .play-btn-info {
     width: 200px;
     margin: 0 auto;
-    padding-top: 225px;
+    padding-top: 205px;
 }
 
 .play-btn-info p {
@@ -231,7 +231,11 @@ img {
 .play-img {
     display: block;
     margin: auto;
-    height: 100px;
+    height: 120px;
     width: 100px;
 
+}
+
+.play-img:hover {
+    cursor: pointer;
 }
