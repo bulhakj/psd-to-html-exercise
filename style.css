@@ -20,7 +20,7 @@ a:hover
     color:#00e0d0;
 }
 
-img {
+.main-logo {
     max-width: 100%;
     height: auto;
     min-width: 129px;
@@ -223,19 +223,54 @@ img {
     text-align: center;
 }
 
-.play-btn-info > img {
-
-
-}
-
 .play-img {
     display: block;
     margin: auto;
     height: 120px;
     width: 100px;
-
 }
 
 .play-img:hover {
     cursor: pointer;
 }
+
+.expertise-header {
+    width: 400px;
+    height: 70px;
+    margin-top: 70px;
+    text-align: center;
+    margin: 70px auto 0 auto;
+}
+
+.expertise-header h2 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #413d4b;
+    font-family: "Playfair Display";
+    font-weight: 700;
+}
+
+.expertise-header p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #2f2d35;
+    font-family: "Playfair Display";
+    font-weight: 400;
+}
+
+.expertise-header hr {
+    margin-top: 20px;
+    width: 50px;
+}
+
+.grid-item {
+    width: 320px;
+    height: 260px;
+    display: inline-block;
+}
+
+.grid-item > img {
+    height: 50px;
+    width: 50px;
+}
+/*320w 260h*/
