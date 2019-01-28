@@ -260,10 +260,13 @@ a:hover
     font-weight: 400;
 }
 
-.expertise-header hr {
-    margin-top: 20px;
+.hr-grey {
     width: 50px;
     background-color: #413d4b;
+}
+
+.hr-exp-pos {
+    margin-top: 20px;
 }
 
 .grid-wrap-parent {
@@ -310,4 +313,47 @@ a:hover
     text-align: center;
 }
 
-/*320w 260h*/
+.team-section-wrapper {
+    width: 100%;
+    min-height: 710px;
+    background-image: url(./img/background_video.png);
+    background-size: cover;
+}
+
+.team-section-header {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.team-section-header h2 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: "Playfair Display";
+    font-weight: 700;
+}
+
+.team-section-header p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #f9f9f9;
+    font-family: "Playfair Display";
+    font-weight: 400;
+}
+
+.team-box-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-item {
+    color: #f9f9f9;
+    text-align: center;
+    width: 25%;
+    box-sizing: border-box;
+    height: 300px;
+    border: 1px #f9f9f9 solid;
+}
