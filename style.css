@@ -681,3 +681,151 @@ a:hover
     padding: 0;
     margin: 0;
 }
+
+.footer-wrapper {
+    background-image: url('./img/footer_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.footer-container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    max-width: 960px;
+    min-height: 270px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.item-foot-wrap {
+    max-width: 300px;
+    max-height: 290px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+.nav-footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 70px 0 0 0;
+    margin: 0;
+}
+
+.nav-footer li {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.item-foot-wrap h4 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 900;
+}
+
+.form-fix {
+    display: flex;
+}
+
+.input-news {
+    width: 200px;
+    height: 45px;
+    margin-right: 10px;
+    background: transparent;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 300;
+    border: 1px solid #ffffff;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.input-button {
+    height: 45px;
+    width: 70px;
+    opacity: 0.5;
+}
+
+.button-img {
+    padding-top: 5px;
+
+}
+
+.input-button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.location-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.img-foot-container {
+    padding: 0;
+}
+
+.location-img {
+    margin: 6px 10px 0 0;
+    padding: 0;
+}
+
+.location-para {
+    margin-top: 5px;
+}
+
+.telephone-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.social-links {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 25px 0 0 0;
+}
+
+.social-links li {
+    text-decoration: none;
+    list-style-type: none;
+    height: 36px;
+    width: 36px;
+    margin-right: 5px;
+}
+
+.social-links li:hover {
+    opacity: 0.8;
+}
+
+.copyright-info {
+    padding-top: 60px;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* .nav-footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 70px 0 0 0;
+    margin: 0;
+} */
