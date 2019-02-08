@@ -343,7 +343,6 @@ a:hover
 .team-section-wrapper {
     width: 100%;
     min-height: 710px;
-    height: 800px;
     background-image: url(./img/background_video.png);
     background-size: cover;
 }
@@ -380,10 +379,11 @@ a:hover
 
 .box-item {
     color: #f9f9f9;
-    text-align: center;
-    width: 24%;
+    text-align: space-between;
+    width: 23%;
     height: 300px;
     border: 1px #f9f9f9 solid;
+
 }
 
 .img-wrapper {
@@ -433,14 +433,14 @@ a:hover
 
 .hire-info-sec {
     margin: 0 auto;
+    padding-bottom: 50px;
     justify-content: center;
+
 }
 
 .hire-btn-fix {
     display: flex;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto 0 auto;
 }
 
 .works-wrapper {
@@ -486,6 +486,7 @@ a:hover
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
 }
 
 .work-item {
@@ -522,9 +523,8 @@ a:hover
 
 
 .testi-para {
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto 0px auto;
+    padding: 0 5px 0 5px;
     font-size: 16px;
     letter-spacing: 0px;
     color: #ffffff;
@@ -829,6 +829,26 @@ a:hover
     align-items: flex-end;
 }
 
+@media(max-width: 958px) {
+    .work-item-7, .work-item-8 {
+        display: none;
+    }
+}
+
+@media(max-width: 846px) {
+    .client-wrapper {
+        display: none;
+    }
+
+    .contact-clients-wrapper {
+        justify-content: center;
+    }
+
+    .item-foot-wrap {
+        padding: 0 5px 0 5px;
+    }
+}
+
  @media (max-width: 750px) {
      /* DO TOGGLE */
     .menu-items-visible {
@@ -883,6 +903,26 @@ a:hover
     margin: 6px 0;
     transition: 0.4s;
     }
+
+   .grid-item h3 {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 160px;
+       height: 45px;
+   }
+   
+   .team-box-wrapper {
+       justify-content: space-around;
+   }
+
+   .box-item {
+       width: 48%;
+   }
+
+   .work-img-wrap {
+       justify-content: center;
+   }
 
    
 }
