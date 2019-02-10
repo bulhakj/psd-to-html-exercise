@@ -93,6 +93,7 @@ a:hover
     letter-spacing: 0px;
     font-size: 32px;
     text-align: center;
+    line-height: 45px;
     font-family: 'Playfair Display', serif;
 }
 
@@ -264,8 +265,8 @@ a:hover
 }
 
 .expertise-header {
-    width: 400px;
-    height: 70px;
+    max-width: 400px;
+    min-height: 70px;
     padding-top: 5px;
     text-align: center;
     margin: 0 auto 0 auto;
@@ -302,7 +303,7 @@ a:hover
 
 .grid-wrapper {
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     max-width: 960px;
@@ -349,7 +350,7 @@ a:hover
 
 .team-section-header {
     text-align: center;
-    padding-top: 70px;
+    padding: 70px 5px 0 5px;
 }
 
 .team-section-header h2 {
@@ -429,6 +430,7 @@ a:hover
     font-family: "Roboto";
     font-weight: 300;
     text-align: center;
+    padding: 0 5px;
 }
 
 .hire-info-sec {
@@ -458,6 +460,7 @@ a:hover
 .works-header {
     font-size: 22px;
     letter-spacing: 1px;
+    line-height: 30px;
     color: #413d4b;
     font-family: "Playfair Display";
     font-weight: 700;
@@ -564,6 +567,14 @@ a:hover
     padding-bottom: 80px;
 }
 
+.cust-wrapper span:nth-child(2) {
+    margin-left: 30px;
+}
+
+.cust-wrapper span:nth-child(6) {
+    margin-right: 30px;
+}
+
 .testi-img-wrapper {
     display: inline-block;
     height: 45px;
@@ -579,14 +590,6 @@ a:hover
 .testi-img-active {
     height: 70px;
     width: 70px;
-}
-
-.cust-wrapper span:nth-child(2) {
-    margin-left: 30px;
-}
-
-.cust-wrapper span:nth-child(6) {
-    margin-right: 30px;
 }
 
 .arrow {
@@ -610,7 +613,6 @@ a:hover
 .contact-form {
     width: 480px;
     margin: 0;
-    margin-left: 5px;
 }
 
 .client-icons {
@@ -847,10 +849,18 @@ a:hover
     .item-foot-wrap {
         padding: 0 5px 0 5px;
     }
+
+    .footer-container {
+        justify-content: space-around;
+    } 
+
+    .short-info-foot {
+        display: none;
+    }
 }
 
  @media (max-width: 750px) {
-     /* DO TOGGLE */
+
     .menu-items-visible {
         display: none;
         transition: color 0.5s ease;
@@ -887,6 +897,7 @@ a:hover
     .menu {
         width: 100%;
         background-color: #4B396D;
+        opacity: 0.8;
     }
 
     .menu-responisive {
@@ -923,6 +934,93 @@ a:hover
    .work-img-wrap {
        justify-content: center;
    }
-
-   
 }
+
+@media(max-width: 640px) {
+    
+    .section-header h1 {
+        margin-top: 100px;
+    }
+
+    .story-section {
+        padding-bottom: 30px;
+    }
+
+    .story-logo {
+        display: none;
+    }
+
+    .story-content h2 {
+        margin-bottom: 30px;
+    }
+
+    .story-content, .story-content h2 {
+        text-align: center;
+    }
+
+    .story-content p {
+        text-align: center;
+    }
+
+    .story-btn {
+        display: inline-block;
+    }
+
+    .expertise-header h2, .expertise-header p, .hr-exp-pos{
+        margin-bottom: 40px;
+    }
+
+    .grid-item{
+        width: 45%;
+        justify-content: center;
+    }
+
+    .grid-item h3 {
+        width:100%;
+    }
+}
+
+@media(max-width: 506px) {
+    
+    .section-header {
+        padding: 0 5px;
+    }
+
+    .grid-wrapper {
+        margin-top: 30px;
+    }
+
+    .grid-item {
+        width: 100%;
+    }
+
+    .box-item {
+        width: 98%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        width: 98%;
+    }
+
+    .our-studio-loc {
+        display: none;
+    }
+}
+
+    @media(max-width: 420px) {
+   
+    .arrow {
+        display: none;
+    }
+
+    .contact-form {
+        text-align: center;
+    }
+
+    .footer-container {
+        padding-top: 50px;
+    }
+}
+    
+
