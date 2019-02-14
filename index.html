@@ -10,11 +10,10 @@
         rel="stylesheet">
     <title>PSD TO HTML EXAMPLE</title>
 </head>
-
 <body>
     <header>
         <div class="container-wrapper">
-            <div class="container">
+            <div class="container" id="container-top">
                 <div class="container-menu">
                     <nav class="nav-wrapper">
                         <div class="nav-container">
@@ -29,21 +28,20 @@
                         </div>
                         <div class="menu">
                             <ul id="menu-list" class="menu-items-visible menu-items-ham">
-                                <li class="menu-items-opt menu-responisive"><a href="#" title="Home page">HOME</a></li>
-                                <li class="menu-items-opt menu-responisive"><a href="#" title="About Us">ABOUT</a></li>
-                                <li class="menu-items-opt menu-responisive"><a href="#" title="Expertise">EXPERTISE</a>
-                                </li>
-                                <li class="menu-items-opt menu-responisive"><a href="#" title="Our Teams">TEAMS</a></li>
-                                <li class="menu-items-opt menu-responisive"><a href="#" title="Works">WORKS</a></li>
-                                <li class="menu-items-opt menu-responisive"><a href="#"
+                                <li class="menu-items-opt menu-responisive"><a href="#home" title="Home page">HOME</a></li>
+                                <li class="menu-items-opt menu-responisive"><a href="#story" title="About Us">ABOUT</a></li>
+                                <li class="menu-items-opt menu-responisive"><a href="#expertise-section" title="Expertise">EXPERTISE</a></li>
+                                <li class="menu-items-opt menu-responisive"><a href="#teams" title="Our Teams">TEAMS</a></li>
+                                <li class="menu-items-opt menu-responisive"><a href="#works" title="Works">WORKS</a></li>
+                                <li class="menu-items-opt menu-responisive"><a href="#people-say"
                                         title="What people say about us">PEOPLE SAY</a></li>
-                                <li class="menu-items-opt menu-responisive"><a href="#" title="Contact us">CONTACT</a>
+                                <li class="menu-items-opt menu-responisive"><a href="#contact" title="Contact us">CONTACT</a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
-                <section>
+                <section id="home">
                     <div class="section-wrapper">
                         <header class="section-header">
                             <h1>We Are Awesome Creative Agency</h2>
@@ -73,7 +71,8 @@
         </div>
     </header>
     <main>
-        <section class="story-section">
+        <a id="scroll-to-top" class="scroll-top back-to-top" href="#" title="Go to top"><img src="./img/arrow_top.png" alt=""></a>
+        <section id="story" class="story-section">
             <div class="story-wrapper">
                 <img class="story-logo" src="./img/story-logo.png" alt="logo">
                 <div class="story-content">
@@ -103,7 +102,7 @@
                 </div>
             </div>
         </section>
-        <section class="expertise-section">
+        <section id="expertise-section" class="expertise-section">
             <header>
                 <div class="expertise-header">
                     <h2>EXPERTISE</h2>
@@ -152,7 +151,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="teams">
             <div class="team-section-wrapper">
                 <header>
                     <div class="team-section-header">
@@ -201,7 +200,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="works">
             <div class="works-wrapper">
                 <div class="works-header-wrapper">
                     <h3 class="works-header">OUR WORKS</h3>
@@ -237,7 +236,7 @@
                 <button class="load-btn-pos sec-btn-learn" type="button">LOAD MORE</button>
             </div>
         </section>
-        <section>
+        <section id="people-say">
             <div class="testi-wrapper">
                 <div class="testi-section">
                     <span><img class="quote-img" src="./img/quote-img.png"></span>
@@ -263,7 +262,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="contact">
             <div class=""></div>
             <div class="contact-clients-wrapper">
                 <div class="contact-form">
@@ -384,7 +383,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./scripts.js"></script>
 </body>
-
 </html>
