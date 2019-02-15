@@ -880,7 +880,7 @@ a:hover
 
     .footer-container {
         justify-content: space-around;
-    } 
+    }
 
     .short-info-foot {
         display: none;
@@ -945,6 +945,7 @@ a:hover
     background-color: #00e0d0;
     margin: 6px 0;
     transition: 0.4s;
+    border-radius: 3px;
     }
 
    .grid-item h3 {

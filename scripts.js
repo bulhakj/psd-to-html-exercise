@@ -20,6 +20,12 @@ $('a.back-to-top').click(function() {
   return false;
 });
 
+$('#content').scroll(function() {
+  var total = $(this)[0].scrollHeight - $(this).height();
+  var opacity = $(this).scrollTop() / total;
+  $('#scroll-to-top').css('opacity', opacity);
+});
+
 let topBtn = document.getElementById("scroll-to-top");
 
 window.addEventListener('scroll', scrollFunction);
@@ -31,8 +37,9 @@ function scrollFunction() {
   }
 }
 
+
+const items = document.querySelector("#menu-list");
 function menu() {
-    const items = document.querySelector("#menu-list");
     if(items.className === "menu-items-visible menu-items-ham") {
         items.className = "menu-items-ham";
     } else {
@@ -42,6 +49,22 @@ function menu() {
 
 const hamburger = document.querySelector(".hamburger-menu");
 hamburger.addEventListener("click", menu);
+
+const menuItems = document.querySelectorAll(".menu-link");
+// function addEventListenerList(menuItems, event, fn) {
+//   for (let i = 0, len = menuItems.length; i < len; i++) {
+//     menuItems[i].addEventListener(event, fn, false);
+//     console.log('done');
+//   }
+// }
+menuItems.forEach.call(menuItems, function(e) {e.addEventListener('click', function() {
+  items.className = "menu-items-visible menu-items-ham";
+  console.log('test1');
+}, false)})
+
+// menuItems.addEventListener("click", () => {
+//   items.className = "menu-items-visible menu-items-ham";
+// })
 
 
 
