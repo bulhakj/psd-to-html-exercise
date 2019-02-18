@@ -1,16 +1,3 @@
-// $(document).ready(function scrolling() {
-//     $('a[href^="#"]').on('click', function(event) {
-//         var target = $($(this).attr('href'));
-//         // if (target.length) {
-//             event.preventDefault();
-//             $('html, body').animate({
-//                 scrollTop: target.offset().top
-//             }, 1000);
-//         // }
-//     });
-//   });
-
-
 $(document).ready(function(){
   $(".menu-link").on('click', function(event) {
     if (this.hash !== "") {
@@ -24,8 +11,6 @@ $(document).ready(function(){
     }
   });
 });
-
-
 
 $('a.back-to-top').click(function() {
   $('html, body').animate({
