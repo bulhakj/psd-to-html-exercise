@@ -916,9 +916,17 @@ a:hover {
     height: 100px;
   }
 
+  .hamburger-wrapper {
+    position: absolute;
+    z-index: 98;
+  }
+
   .hamburger-menu {
+    position: fixed;
     cursor: pointer;
     margin-right: 20px;
+    right:0;
+    top: 37px;
   }
 
   .menu {
@@ -934,11 +942,18 @@ a:hover {
     transition: 0.5s;
   }
 
+  .menu-open {
+    width: 100%;
+  }
+
+  .menu-close {
+    width: 0%
+  }
+
   .close-menu-btn {
     display: block;
-    position: absolute;
-    top: 20px;
-    right: 45px;
+    position: fixed;
+    right: 0;
     font-size: 34px;
     cursor: pointer;
   }
@@ -968,6 +983,18 @@ a:hover {
     margin: 6px 0;
     transition: 0.4s;
     border-radius: 3px;
+  }
+
+  .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar2 {opacity: 0;}
+
+  .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
   }
 
   .grid-item h3 {

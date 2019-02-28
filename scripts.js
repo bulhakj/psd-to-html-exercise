@@ -1,14 +1,15 @@
-$(document).ready(function() {
-  $(".menu-link").on("click", function(event) {
+$(document).ready(function () {
+  $(".menu-link").on("click", function (event) {
+
     if (this.hash !== "") {
       event.preventDefault();
-      var hash = this.hash;
+      const hash = this.hash;
       $("html, body").animate(
         {
           scrollTop: $(hash).offset().top
         },
         800,
-        function() {
+        function () {
           window.location.hash = hash;
         }
       );
@@ -16,7 +17,7 @@ $(document).ready(function() {
   });
 });
 
-$("a.back-to-top").click(function() {
+$("a.back-to-top").click(function () {
   $("html, body").animate(
     {
       scrollTop: 0
@@ -26,50 +27,48 @@ $("a.back-to-top").click(function() {
   return false;
 });
 
-$("#scroll-to-top").scroll(function() {
-  var total = $(this)[0].scrollHeight - $(this).height();
-  var opacity = $(this).scrollTop() / total;
-  $("#scroll-to-top").css("opacity", opacity);
-});
+const topBtn = document.getElementById("scroll-to-top");
 
-let topBtn = document.getElementById("scroll-to-top");
-
-window.addEventListener("scroll", scrollFunction);
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    topBtn.style.display = "block";
+const scrollFunction = () => {
+  if ($(window).width() >= 750) {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
   } else {
     topBtn.style.display = "none";
   }
 }
+
+window.addEventListener("scroll", scrollFunction);
 const menuWrapper = document.querySelector(".menu");
 const items = document.querySelector("#menu-list");
+const hamburgerAnimation = document.getElementById("hamburger-icon");
+
+// zrobic funckje menu lepiej
 function menu() {
-  menuWrapper.style.width = "100%";
+
   if (items.className === "menu-items-visible menu-items-ham") {
+    menuWrapper.classList.add("menu-open");
     items.className = "menu-items-ham";
   } else {
     items.className = "menu-items-visible menu-items-ham";
+    menuWrapper.classList.remove("menu-open");
   }
+}
+
+const handleClose = (x) => {
+  x.classList.toggle("change");
 }
 
 const hamburger = document.querySelector(".hamburger-menu");
 hamburger.addEventListener("click", menu);
 
-const menuItems = document.querySelectorAll(".menu-link");
-menuItems.forEach.call(menuItems, function(e) {
-  e.addEventListener(
-    "click",
-    function() {
-      items.className = "menu-items-visible menu-items-ham";
-    },
-    false
-  );
-});
-
-//close button mobile menu
-const clBtn = document.getElementById("close-menu");
-const closeMenu = () => {
-  menuWrapper.style.width = "0%";
-};
-clBtn.addEventListener("click", closeMenu);
+const menuLinks = document.querySelectorAll(".menu-items-opt");
+menuLinks.forEach.call(menuLinks, (e) => {
+  e.addEventListener("click", () => {
+    menu();
+    hamburgerAnimation.classList.remove("change");
+  }, false)
+})
