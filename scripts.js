@@ -46,7 +46,6 @@ const menuWrapper = document.querySelector(".menu");
 const items = document.querySelector("#menu-list");
 const hamburgerAnimation = document.getElementById("hamburger-icon");
 
-// zrobic funckje menu lepiej
 function menu() {
 
   if (items.className === "menu-items-visible menu-items-ham") {
